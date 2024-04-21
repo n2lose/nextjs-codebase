@@ -1,0 +1,15 @@
+{
+	"extends": [
+		"next/core-web-vitals",
+		"next",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:jest-dom/recommended"
+	],
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/no-unused-vars": "error",
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"react/prop-types": "off"
+	}
+}

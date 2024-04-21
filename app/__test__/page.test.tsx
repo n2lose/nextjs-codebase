@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react'
-import {expect, jest, test} from '@jest/globals';
-import Home from '@/app/page'
+import {expect} from '@jest/globals';
+import Home from '@/page'
 
 describe('Home Page', () => {
 	it('renders login link', () => {
