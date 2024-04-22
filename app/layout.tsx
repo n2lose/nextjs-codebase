@@ -1,32 +1,29 @@
+import {AntdRegistry} from '@/libs/registry'
+import {ConfigProvider} from 'antd'
+import type {Metadata} from 'next'
+import {Inter} from 'next/font/google'
+import './globals.css'
+import themeDefault from '@/styles/theme/themeConfig'
 
-import { AntdRegistry } from "@/libs/registry";
-import { ConfigProvider } from "antd";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import themeDefault from "@/styles/theme/themeConfig";
-
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: "Next App Base",
-  description: "",
-};
+	title: 'Next App Base',
+	description: '',
+}
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <AntdRegistry>
-          <ConfigProvider theme={themeDefault}>
-          {children}
-            </ConfigProvider>
-        </AntdRegistry>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={inter.className}>
+				<AntdRegistry>
+					<ConfigProvider theme={themeDefault}>{children}</ConfigProvider>
+				</AntdRegistry>
+			</body>
+		</html>
+	)
 }
