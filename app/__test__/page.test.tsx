@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react'
-import {expect} from '@jest/globals';
+import {expect} from '@jest/globals'
 import Home from '@/page'
 
 describe('Home Page', () => {

@@ -4,7 +4,8 @@
 		"next",
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:jest-dom/recommended"
+		"plugin:jest-dom/recommended",
+		"plugin:storybook/recommended"
 	],
 	"rules": {
 		"@typescript-eslint/no-explicit-any": "error",
