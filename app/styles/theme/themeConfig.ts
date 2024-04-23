@@ -1,11 +1,12 @@
 // theme/themeConfig.ts
 import type {ThemeConfig} from 'antd'
 
-const themeDefault: ThemeConfig = {
+const theme: ThemeConfig = {
 	token: {
 		fontSize: 16,
-		colorPrimary: '#52c41a',
+		colorPrimary: '#0421FE',
 	},
+	hashed: false,
 }
 
-export default themeDefault
+export default theme
