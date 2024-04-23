@@ -1,6 +1,6 @@
-import {addons} from '@storybook/addons'
-import customTheme from './theme'
+import { addons } from '@storybook/manager-api';
+import defaultTheme from './defaultTheme';
 
 addons.setConfig({
-	theme: customTheme,
-})
+  theme: defaultTheme
+});
