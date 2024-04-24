@@ -4,6 +4,7 @@ import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import './globals.css'
 import themeDefault from '@/styles/theme/themeConfig'
+import {ReactQueryProvider} from '@/QueryProvider'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -21,7 +22,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<AntdRegistry>
-					<ConfigProvider theme={themeDefault}>{children}</ConfigProvider>
+					<ConfigProvider theme={themeDefault}>
+						<ReactQueryProvider>{children}</ReactQueryProvider>
+					</ConfigProvider>
 				</AntdRegistry>
 			</body>
 		</html>
