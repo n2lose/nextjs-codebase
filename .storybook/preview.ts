@@ -1,12 +1,12 @@
-import { Preview } from '@storybook/react';
-import { themes } from '@storybook/theming';
+import {Preview} from '@storybook/react'
+import {themes} from '@storybook/theming'
 
 const preview: Preview = {
-  parameters: {
-    docs: {
-      theme: themes.light
-    },
-  },
-};
+	parameters: {
+		docs: {
+			theme: themes.light,
+		},
+	},
+}
 
-export default preview;
+export default preview
